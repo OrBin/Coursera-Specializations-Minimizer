@@ -1,0 +1,17 @@
+{
+	"name": "Coursera Specializations Minimizer",
+	"description": "course-specializations-minimizer",
+	"version": "1.0",
+
+	"manifest_version": 2,
+
+	"permissions": [
+		"https://coursera.org/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://www.coursera.org/*"],
+			"js": ["jquery-2.1.4.min.js", "minimize_specializations.js"]
+		}
+	]
+}
